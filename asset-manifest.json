@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hellolens/static/css/main.c1b9b4fa.css",
+    "main.js": "/hellolens/static/js/main.dc17ce06.js",
+    "static/js/453.ed3810f9.chunk.js": "/hellolens/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/hellolens/index.html",
+    "main.c1b9b4fa.css.map": "/hellolens/static/css/main.c1b9b4fa.css.map",
+    "main.dc17ce06.js.map": "/hellolens/static/js/main.dc17ce06.js.map",
+    "453.ed3810f9.chunk.js.map": "/hellolens/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1b9b4fa.css",
+    "static/js/main.dc17ce06.js"
+  ]
+}
