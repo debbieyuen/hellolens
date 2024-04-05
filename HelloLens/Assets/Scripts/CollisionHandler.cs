@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] private MeshRenderer meshRenderer;
-    [SerializeField] private ParticleSystem enemyParticles;
+    [SerializeField] private ParticleSystem gemParticles;
+
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -13,18 +15,22 @@ public class CollisionHandler : MonoBehaviour
 
         switch (collision.gameObject.tag)
         {
-            case "Enemy":
-                Destroy(gameObject);
+            case "Plane":
                 break;
 
             case "Gem":
                 meshRenderer.material = collision.gameObject.GetComponent<Renderer>().material;
                 Destroy(collision.gameObject);
-                //PlayParticles();
+                PlayParticles();
                 break;
 
             default:
                 break;
         }
+    }
+
+    private void PlayParticles()
+    {
+        gemParticles.Play();
     }
 }
