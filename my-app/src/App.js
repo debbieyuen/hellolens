@@ -13,6 +13,14 @@ function App() {
   return (
     
     <div className="App">
+
+      <div className="HeaderBar">
+        <h1>HELLOLENS</h1>
+        <a href="https://docs.google.com/document/d/1_dCsDPlbdG0KmRdg_9qzkT5Wib6FfCAADcAgBb3p4GE/edit?usp=sharing"><button>Resume</button></a>
+        <a href="https://debbieyuen.me/"><button>Portfolio</button></a>
+        <a href="https://github.com/debbieyuen"><button>GitHub</button></a>
+      </div>
+
       <div className ="Unity">
         <Unity unityContext={unityContext} 
         style= {{
@@ -27,12 +35,6 @@ function App() {
         }}/>  
       </div>
 
-      <div className="HeaderBar">
-        <h1>HELLOLENS</h1>
-        <a href="https://docs.google.com/document/d/1_dCsDPlbdG0KmRdg_9qzkT5Wib6FfCAADcAgBb3p4GE/edit?usp=sharing"><button>Resume</button></a>
-        <a href="https://debbieyuen.me/"><button>Portfolio</button></a>
-        <a href="https://github.com/debbieyuen"><button>GitHub</button></a>
-      </div>
     </div>
   );
 }
